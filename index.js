@@ -22,10 +22,10 @@ function moveDodgerRight() {
 }
 
 document.addEventListener('keydown', function (e) {
-    if (e.which === 37) {
+    if (e.key === 37) {
         moveDodgerLeft();
     }
-    if (e.which === 39) {
+    if (e.key === 39) {
         moveDodgerRight();
     }
 });
