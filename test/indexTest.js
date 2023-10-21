@@ -1,4 +1,4 @@
-require ( './helpers.js' );
+require('./helpers.js');
 
 describe('moveDodgerLeft()', () => {
   beforeEach(() => {
@@ -14,7 +14,7 @@ describe('moveDodgerLeft()', () => {
     let newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
 
-    if (left > 0){
+    if (left > 0) {
       expect(newPosition).to.be.below(left)
     } else {
       expect(newPosition).to.equal(left)
@@ -35,12 +35,12 @@ describe('moveDodgerRight()', () => {
 
     let newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
-    
-    if (left < 360){
+
+    if (left < 360) {
       expect(newPosition).to.be.above(left)
-    } else{
+    } else {
       expect(newPosition).to.equal(left)
     }
-    
+
   })
 })
